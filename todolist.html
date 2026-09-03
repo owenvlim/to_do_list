@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: linear-gradient(135deg, rgb(26, 6, 156), rgb(97, 2, 118));
+        }
+
+        .container{
+            display: flex;               
+            justify-content: center;       
+            align-items: center;           
+            min-height: 98vh;             
+        }
+
+        .table {
+            height: 500px;
+            width: 700px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .table h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .table p{
+            width: 90%;
+        }
+
+        #task{
+            width: 640px;
+            border-radius: 100px;
+            background-color: rgb(207, 207, 207);
+            border: 0px;
+            padding: 19px;
+            font-size: 16px;
+            padding-left: 40px;
+            position: absolute;
+        }
+
+        .add{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .add button{
+            border-radius: 100px;
+            padding: 17px;
+            width: 150px;
+            border: none;
+            background-color: rgb(195, 45, 0);
+            color: white;
+            margin-left: 570px;
+            z-index: 1;
+            font-size: 20px;
+        }
+
+        .card{
+            display: flex;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .card button{
+            font-size: 20px;
+            width: 10%;
+            background-color: transparent;
+            border: 0px;
+
+        }
+
+        #tasktext{
+            margin: 0px;
+            font-size: 22px;
+        }
+
+        #date{
+            margin: 0px;
+            font-size: 14px;
+            margin-top: 0px;
+            color: red;
+        }
+
+        #check{
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 100%;
+            margin-right: 15px;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        #check:checked{
+            background-color: rgb(195, 45, 0);
+            border: 2px solid #000a14;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--center the table-->
+    <div class="container">
+        <!--where eveyrthing is it centers and just a look thing-->
+        <div class="table">
+
+            <h1>To-Do List 🗒️</h1>
+
+            <!--need this to group it and merge them side by side without effecting outer thing-->
+            <div class="add">
+                <input type="text" id="task" placeholder="add text here">
+                <button type="button" onclick="">add</button>
+            </div>
+
+                <div class="card">
+                    <input type="checkbox" id="check">
+                    <p id= "tasktext">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button onclick="">x</button>
+                </div>
+
+                <div class="card">
+                    <input type="checkbox" id="check">
+                    <p id= "tasktext">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button onclick="">x</button>
+                </div>
+                
+
+        </div>
+    </div>
+</body>
+</html>
